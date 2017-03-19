@@ -1,14 +1,18 @@
 <body>
    <header>
        <h1>Voting App</h1>
+       {{> loginButtons}}
    </header>
+
     <main>
         <h2>{{hello}}</h2>
+        {{#if loggedIn}}
         <form class="new-items">
             <input type="text" name="item1" placeholder="Item 1" />
             <input type="text" name="item2" placeholder="Item 2" />
             <input type="submit">
         </form>
+        {{/if}}
         {{#each items}}
             {{> item}}
         {{/each}}

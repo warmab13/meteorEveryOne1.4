@@ -1,11 +1,10 @@
 /**
  * Created by warmab on 3/18/17.
  */
-import { Template } from 'meteor/templating';
-
 import  Items  from '../api/items.js';
 
 import './body.html';
+import './item.js';
 
 Template.body.helpers({
   items(){
